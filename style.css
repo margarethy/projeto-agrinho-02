@@ -1,51 +1,200 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão Campo e Cidade</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Conexão entre Campo e Cidade</h1>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="#introducao" aria-label="Ir para introdução">Introdução</a></li>
-                <li><a href="#desafios" aria-label="Ir para desafios">Desafios</a></li>
-                <li><a href="#oportunidades" aria-label="Ir para oportunidades">Oportunidades</a></li>
-                <li><a href="#conclusao" aria-label="Ir para conclusão">Conclusão</a></li>
-            </ul>
-        </nav>
-    </header>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-    <main>
-        <section id="introducao" tabindex="0">
-            <h2>Introdução</h2>
-            <p>A migração das pessoas do campo para as cidades tem sido um fenômeno crescente nas últimas décadas. Essa transição traz consigo uma série de desafios e oportunidades que impactam tanto a vida rural quanto a urbana.</p>
-        </section>
+:root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+}
 
-        <section id="desafios" tabindex="0">
-            <h2>Desafios</h2>
-            <p>Apesar das oportunidades, existem diversos desafios enfrentados por aqueles que se mudam para a cidade, como o acesso à moradia, educação e saúde. Além disso, a adaptação cultural pode ser um obstáculo significativo.</p>
-        </section>
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
 
-        <section id="oportunidades" tabindex="0">
-            <h2>Oportunidades</h2>
-            <p>A vida na cidade oferece muitas oportunidades que atraem pessoas do campo, como melhores empregos, acesso à educação de qualidade e serviços de saúde mais abrangentes. A diversidade cultural das cidades também enriquece a experiência de vida.</p>
-        </section>
+header {
+    background-color: #ffffff;
+}
 
-        <section id="conclusao" tabindex="0">
-            <h2>Conclusão</h2>
-            <p>A conexão entre o campo e a cidade é complexa e cheia de nuances. É fundamental promover políticas públicas que integrem essas duas realidades, garantindo que todos tenham acesso às vantagens que cada um pode oferecer.</p>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
-    </footer>
+section {
+    padding-bottom: 5rem;
+}
 
-    <script src="main.js"></script>
-</body>
-</html>
-`
+
+.nav-link {
+    color: #CB6D43;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('img/4965007.jpg');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* posicionamento para a imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
+}
+
+#galeria {
+    background-color: #FAF4F4;
+
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #CB6D43;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
