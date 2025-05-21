@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conexão entre Campo e Cidade</h1>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#introducao" aria-label="Ir para introdução">Introdução</a></li>
+                <li><a href="#desafios" aria-label="Ir para desafios">Desafios</a></li>
+                <li><a href="#oportunidades" aria-label="Ir para oportunidades">Oportunidades</a></li>
+                <li><a href="#conclusao" aria-label="Ir para conclusão">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao" tabindex="0">
+            <h2>Introdução</h2>
+            <p>A migração das pessoas do campo para as cidades tem sido um fenômeno crescente nas últimas décadas. Essa transição traz consigo uma série de desafios e oportunidades que impactam tanto a vida rural quanto a urbana.</p>
+        </section>
+
+        <section id="desafios" tabindex="0">
+            <h2>Desafios</h2>
+            <p>Apesar das oportunidades, existem diversos desafios enfrentados por aqueles que se mudam para a cidade, como o acesso à moradia, educação e saúde. Além disso, a adaptação cultural pode ser um obstáculo significativo.</p>
+        </section>
+
+        <section id="oportunidades" tabindex="0">
+            <h2>Oportunidades</h2>
+            <p>A vida na cidade oferece muitas oportunidades que atraem pessoas do campo, como melhores empregos, acesso à educação de qualidade e serviços de saúde mais abrangentes. A diversidade cultural das cidades também enriquece a experiência de vida.</p>
+        </section>
+
+        <section id="conclusao" tabindex="0">
+            <h2>Conclusão</h2>
+            <p>A conexão entre o campo e a cidade é complexa e cheia de nuances. É fundamental promover políticas públicas que integrem essas duas realidades, garantindo que todos tenham acesso às vantagens que cada um pode oferecer.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+`
